@@ -1,4 +1,4 @@
-# DL-based Drug Repurposing Framework for Leigh Syndrome
+# DL-based Drug Repurposing Framework
 
 This repository contains code and configuration to run a deep learning (DL)–based framework for **cell type–specific drug repurposing**, originally applied to Leigh syndrome using single-cell and bulk transcriptomic data.
 
@@ -83,7 +83,6 @@ No additional Python packages need to be installed on the host if you use the Si
 For the Leigh use case, the main prediction outputs that are later ranked are:
 
     drug_cl6cl7_ranked.csv
-
     drug_cl4cl7_ranked.csv
 
 If a small demo dataset is included, its location can be documented here (e.g. data/demo/).
