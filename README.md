@@ -1,6 +1,6 @@
 # DL-based Drug Repurposing Framework
 
-This repository contains code and configuration to run a deep learning (DL)–based framework for **cell type–specific drug repurposing**, originally applied to Leigh syndrome using single-cell and bulk transcriptomic data.
+This repository contains code and configuration to run a deep learning (DL)–based framework for cell type–specific drug repurposing, originally applied to Leigh syndrome using single-cell and bulk transcriptomic data.
 
 ---
 
