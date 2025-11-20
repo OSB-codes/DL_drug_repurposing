@@ -92,24 +92,24 @@ If a small demo dataset is included, its location can be documented here (e.g. d
 
 ### 3.2 Running the demo pipeline
 
-# 1. Make embeddings
-sbatch Py_launcher_make_embeddings.sh make_embeddings.py
+1. Make embeddings
+```sbatch Py_launcher_make_embeddings.sh make_embeddings.py```
 
-# 2. Run VAE, FNN, and drug scoring.
-#    Random perturbation is deactivated for reproducibility.
-#    Original random perturbation outputs are stored under randoms/
-#    For a new application, you can activate it and results will be saved under randoms_local/
-sbatch Py_launcher_run_FFNs.sh run_FFNs.py ./ .005 0.0 1500 5 0.7 0 2.0 0.1 ./ 3
+2. Run VAE, FNN, and drug scoring.
+    Random perturbation is deactivated for reproducibility.
+    Original random perturbation outputs are stored under randoms/
+    For a new application, you can activate it and results will be saved under randoms_local/
+```sbatch Py_launcher_run_FFNs.sh run_FFNs.py ./ .005 0.0 1500 5 0.7 0 2.0 0.1 ./ 3```
 
 After the Slurm jobs complete, you should have predOut_<tag>_drug_pvalues.csv files. Then rank drugs by BES:
 
-# 3. Manual ranking step for Leigh comparisons
-singularity run --no-home -B <project_path> pytorch_gnn.sif \
+3. Manual ranking step for Leigh comparisons
+```singularity run --no-home -B <project_path> pytorch_gnn.sif \
   python rank_drugs_by_BES.py predOut_cl6cl7_drug_pvalues.csv
 
 singularity run --no-home -B <project_path> pytorch_gnn.sif \
   python rank_drugs_by_BES.py predOut_cl4cl7_drug_pvalues.csv
-
+```
 This will generate:
 
     drug_cl6cl7_ranked.csv
