@@ -61,11 +61,11 @@ cd manuscript_code
 
 Singularity container:
 
-  wget -O pytorch_gnn.sif https://zenodo.org/records/17625383/files/pytorch_gnn.sif
+```  wget -O pytorch_gnn.sif https://zenodo.org/records/17625383/files/pytorch_gnn.sif```
 
 Trained SIGN-VAE model:
 
-  wget -O my_torch_SIGN_VAE.model https://zenodo.org/records/17635308/files/my_torch_SIGN_VAE.model
+```  wget -O my_torch_SIGN_VAE.model https://zenodo.org/records/17635308/files/my_torch_SIGN_VAE.model```
 
 ### 2.3 Typical install time on a normal desktop
 
