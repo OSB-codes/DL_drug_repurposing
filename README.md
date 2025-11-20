@@ -48,6 +48,7 @@ singularity run --no-home \
   -B /usr/lib64/libmunge.so.2.0.0:/usr/lib64/libmunge.so.2.0.0 \
   -B /var/run/munge:/var/run/munge \
   pytorch_gnn.sif python "$@"
+```
 
 ## 2. Installation guide
 
