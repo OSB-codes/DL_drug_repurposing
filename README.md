@@ -81,16 +81,7 @@ No additional Python packages need to be installed on the host if you use the Si
 
 ## 3. Demo
 
-### 3.1 Demo input data
-
-For the Leigh use case, the main prediction outputs that are later ranked are:
-
-    drug_cl6cl7_ranked.csv
-    drug_cl4cl7_ranked.csv
-
-If a small demo dataset is included, its location can be documented here (e.g. data/demo/).
-
-### 3.2 Running the demo pipeline
+### 3.1 Running the demo pipeline
 
 1. Make embeddings
 ```sbatch Py_launcher_make_embeddings.sh make_embeddings.py```
@@ -115,7 +106,7 @@ This will generate:
     drug_cl6cl7_ranked.csv
     drug_cl4cl7_ranked.csv
 
-### 3.3 Expected runtime on a normal-sized HPC job
+### 3.2 Expected runtime on a normal-sized HPC job
 
 On a modest CPU-only node (e.g. 1–4 cores, 16–32 GB RAM, no GPU):
 
