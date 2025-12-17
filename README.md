@@ -54,7 +54,7 @@ singularity run --no-home \
 
 ### 2.1 Clone the repository
 
-git clone https://github.com/temporary-code-2025/manuscript_code.git
+git clone https://github.com/OSB-codes/DL_drug_repurposing.git
 cd manuscript_code
 
 ### 2.2 Download required artifacts
